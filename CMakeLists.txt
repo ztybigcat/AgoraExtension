@@ -1,5 +1,10 @@
-cmake_minimum_required(VERSION 3.27)
+cmake_minimum_required(VERSION 3.22.1)
 project(AgoraExtension)
+
+
+set(Python_EXECUTABLE $ENV{Python_EXECUTABLE})
+set(Python_INCLUDE_DIRS $ENV{Python_INCLUDE_DIRS})
+set(Python_LIBRARIES $ENV{Python_LIBRARIES})
 
 # Find the Python interpreter and development headers
 find_package(Python COMPONENTS Interpreter Development REQUIRED)
